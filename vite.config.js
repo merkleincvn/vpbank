@@ -7,6 +7,7 @@ module.exports = defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         login: resolve(__dirname, 'login.html'),
+        detail: resolve(__dirname, 'detail.html'),
       },
     },
   },
