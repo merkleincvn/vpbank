@@ -1,5 +1,5 @@
 module.exports = {
-  content: ['./*.{html,js}'],
+  content: ['./*.{html,js}', './node_modules/flowbite/**/*.js'],
   theme: {
     extend: {},
     container: {
@@ -26,5 +26,9 @@ module.exports = {
       customTablet: '1090px',
     },
   },
-  plugins: [require('tailwind-scrollbar-hide'), require('tailwind-scrollbar')],
+  plugins: [
+    require('tailwind-scrollbar-hide'),
+    require('tailwind-scrollbar'),
+    require('flowbite/plugin'),
+  ],
 }
