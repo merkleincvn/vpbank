@@ -9,6 +9,7 @@ module.exports = defineConfig({
         login: resolve(__dirname, 'login.html'),
         detail: resolve(__dirname, 'detail.html'),
         promote: resolve(__dirname, 'promote.html'),
+        register: resolve(__dirname, 'register.html'),
       },
     },
   },
