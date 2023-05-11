@@ -59,6 +59,7 @@
                     <img src="https://cards.vpbank.com.vn/src/assets/img_login.svg" alt="">
                 </div>
             </div>
+            <div id="thank-content"></div>
             <div id="form-content">
                 <form class="w-full">
                     <div class="grid gap-6 mb-6 md:grid-cols-2">
@@ -126,7 +127,10 @@
     <script>
         document.querySelector("#registerButton").addEventListener('click', (e) => {
 
-            document.querySelector("#form-content").innerHTML = '<p class="text-center font-bold text-2xl text-green-500 py-10">Cảm ơn bạn đã đăng kí</p>'
+            document.querySelector("#form-content").style.visibility = "hidden";
+            document.querySelector("#form-content").style.maxHeight = "15px"
+            document.querySelector("#thank-content").innerHTML =
+                '<p class="text-center font-bold text-2xl text-green-500 py-10">Cảm ơn bạn đã đăng kí</p>'
         })
     </script>
 </body>
